@@ -1,29 +1,20 @@
-0. Database Modeling and Data Seeding in Django
-mandatory
 Objective
 
-Define the database models, create serializers for API data representation, and implement a management command to seed the database.
+Build API views to manage listings and bookings, and ensure the endpoints are documented with Swagger.
 
 Instructions
 
 Duplicate Project:
 
-Duplicate the project alx_travel_app to alx_travel_app_0x00
-Create Models:
+Duplicate the project alx_travel_app_0x00 to alx_travel_app_0x01
+Create ViewSets:
 
-In listings/models.py, define Listing, Booking, and Review models based on the provided structure.
-Each model should have appropriate fields, relationships, and constraints.
-Set Up Serializers:
+In listings/views.py, create viewsets for Listing and Booking using Django REST framework’s ModelViewSet.
+Ensure that these views provide CRUD operations for both models.
+Configure URLs:
 
-Create serializers in listings/serializers.py for Listing and Booking models.
-Implement Seeders:
+Use a router to configure URLs for the API endpoints.
+Ensure endpoints follow RESTful conventions and are accessible under /api/.
+Test Endpoints:
 
-Create a management command in listings/management/commands/seed.py to populate the database with sample listings data.
-Run Seed Command:
-
-Test the seeder by running the command to populate the database with sample data.
-Repo:
-
-GitHub repository: alx_travel_app_0x00
-Directory: alx_travel_app
-File: listings/models.py, listings/serializers.py, listings/management/commands/seed.py, README.md
+Test each endpoint (GET, POST, PUT, DELETE) using a tool like Postman to ensure they work as expected.
